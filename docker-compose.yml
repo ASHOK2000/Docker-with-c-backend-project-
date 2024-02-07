@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  payroll-api:
+    # image: registry.gitlab.com/spundan-clients/hr-payroll-application-spundan/hr-payroll-api
+    build: .
+    container_name: payroll-application
+    restart: always
+  #   networks:
+  #     - app-network
+    ports:
+      - "5277:5275"
+  #   # environment:
+  #   #   - ASPNETCORE_URLS=http://+:5000
+  #   #   - DOTNET_URLS=http://+:5000
+  # mongodb:
+  #   image: mongo:latest 
+  #   container_name: mongodb 
+  #   environment:
+  #     MONGO_INITDB_ROOT_PASSWORD: 9-XHahHq9%2540-THDf
+  #     MONGO_INITDB_ROOT_USERNAME: spundan
+  #     MONGODB_DATABASE: hrpayrolldev
+  #   restart: always
+  #   ports:
+  #     - 27017:27017 
+  #   volumes:
+  #     - mongodb_data:/data/db
+  #   networks:
+  #     - app-network
+
+# networks:
+#   app-network:
+#     driver: bridge
+    
+# volumes:
+#   mongodb_data:
