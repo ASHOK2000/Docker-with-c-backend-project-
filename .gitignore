@@ -1,0 +1,48 @@
+# .NET Core / Visual Studio / Rider / OmniSharp
+.vscode
+.idea
+.vs
+bin
+obj
+TestResults/
+*.user
+*.vscode
+*.vs
+
+# User-specific files
+*.rsuser
+*.suo
+*.userprefs
+*.sln.docstates
+
+# NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of PackageReference
+**/packages/*
+# except build/, which is used as an MSBuild target.
+!**/packages/build/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Visual Studio 2017+
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+node_modules/
+
+# Rider
+.idea/
+
+# User-specific files
+*.sln.dotsettings.user
+*.sln.dotsettings.user.gnudb
