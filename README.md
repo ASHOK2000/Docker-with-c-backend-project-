@@ -1,98 +1,93 @@
-# Docker-with-c#-backend-project-
-here's a condensed list with descriptions :
+here's a condensed list withdescriptions :
+ 
+1.Run Docker Compose:
 
-    Run Docker Compose:
 
-     
+    docker-compose up -d
 
-docker-compose up -d
+Description: Start the Docker containers defined in the docker-compose.yml file in detached mode.
 
-    Description: Start the Docker containers defined in the docker-compose.yml file in detached mode.
+2.Run Docker Compose with Custom YAML File:
 
-Run Docker Compose with Custom YAML File:
+
+    docker-compose -f compose.yml up -d
+
+Description: Start Docker containers using a specific YAML file (compose.yml) in detached mode.
+
+3.Stop Docker Compose:
 
  
 
-docker-compose -f compose.yml up -d
+    sudo docker-compose down
 
-    Description: Start Docker containers using a specific YAML file (compose.yml) in detached mode.
+Description: Stop and remove the Docker containers defined in the docker-compose.yml file.
 
-Stop Docker Compose:
-
- 
-
-sudo docker-compose down
-
-    Description: Stop and remove the Docker containers defined in the docker-compose.yml file.
-
-Stop Docker Service:
+4.Stop Docker Service:
 
  
 
-sudo systemctl stop docker
+    sudo systemctl stop docker
 
-    Description: Stop the Docker service.
+Description: Stop the Docker service.
 
-Restart Docker Service:
-
- 
-
-sudo systemctl restart docker.socket
-
-    Description: Restart the Docker service.
-
-Check Running Containers:
+5.Restart Docker Service:
 
  
 
-docker ps
+    sudo systemctl restart docker.socket
 
-    Description: Display a list of running Docker containers.
+Description: Restart the Docker service.
 
-View Docker Container Logs:
-
- 
-
-docker logs payroll-application
-
-    Description: View logs for the Docker container named "payroll-application."
-
-Restart Docker Container by ID:
+6.Check Running Containers:
 
  
 
-docker restart a53c6d5a0466
+    docker ps
 
-    Description: Restart a specific Docker container by its ID.
+Description: Display a list of running Docker containers.
 
-Restart Docker Container by Name:
+7.View Docker Container Logs:
 
- 
+    docker logs payroll-application
 
-docker restart payroll-application
+Description: View logs for the Docker container named "payroll-application."
 
-    Description: Restart a specific Docker container by its name.
-
-Stop and Remove Docker Compose Containers:
+8.Restart Docker Container by ID:
 
  
 
-docker-compose -f compose.yml down
+    docker restart a53c6d5a0466
 
-    Description: Stop and remove Docker containers defined in the docker-compose.yml file.
+Description: Restart a specific Docker container by its ID.
 
-Rebuild and Start Docker Compose Containers:
-
- 
-
-docker-compose -f compose.yml up -d --build
-
-    Description: Rebuild and start Docker containers using the specified YAML file in detached mode.
-
-Execute Shell in Docker Container:
+9.Restart Docker Container by Name:
 
  
 
-docker exec -it eb sh
+    docker restart payroll-application
 
-    Description: Open an interactive shell in the Docker container named "eb."
+Description: Restart a specific Docker container by its name.
+
+10.Stop and Remove Docker Compose Containers:
+
+ 
+
+    docker-compose -f compose.yml down
+
+Description: Stop and remove Docker containers defined in the docker-compose.yml file.
+
+11.Rebuild and Start Docker Compose Containers:
+
+ 
+
+    docker-compose -f compose.yml up -d --build
+
+Description: Rebuild and start Docker containers using the specified YAML file in detached mode.
+
+12.Execute Shell in Docker Container:
+
+ 
+
+    docker exec -it eb sh
+
+Description: Open an interactive shell in the Docker container named "eb."
