@@ -90,4 +90,20 @@ Description: Rebuild and start Docker containers using the specified YAML file i
 
     docker exec -it eb sh
 
-Description: Open an interactive shell in the Docker container named "eb."
+Description: Open an interactive shell in the Docker container named "be."
+
+13.Delete Docker Container:
+
+ 
+
+    docker system prune -a
+
+Description: delete all containers from docker 
+
+12.Root of Docker Container:
+
+ 
+    sudo systemctl restart docker.socket
+
+Description:  it essentially restarts the Docker socket service.
+
